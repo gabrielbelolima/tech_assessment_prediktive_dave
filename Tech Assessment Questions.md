@@ -70,7 +70,12 @@
 
 9. **Which of the following syntax is valid? (There may be more than one answer):**
 
- > a. select ID, AGE from CUSTOMER where AGE > 0 group by 1 -- Age is not aggregated nor added in group by. b. select AGE, count(*) from CUSTOMER where ID is not null group by 1 -- This one is correct and is going to create groups of registers (where id is not null) by age.c. select ID, sum(SALES) from CUSTOMER having SALES > 0 group by 1 -- HAVING comes after the GROUP BY.d. select distinct ID from CUSTOMER where AGE > 0 limit 10 -- This one is correct and is going to return the first 10 rows of distinct ID where AGE > 0.e. All of the above. None of the above
+a. select ID, AGE from CUSTOMER where AGE > 0 group by 1              -- Age is not aggregated nor added in group by. 
+b. select AGE, count(*) from CUSTOMER where ID is not null group by 1 -- This one is correct and is going to create groups of registers (where id is not null) by age
+c. select ID, sum(SALES) from CUSTOMER having SALES > 0 group by 1    -- HAVING comes after the GROUP BY.
+d. select distinct ID from CUSTOMER where AGE > 0 limit 10            -- This one is correct and is going to return the first 10 rows of distinct ID where AGE > 0.
+e. All of the above. 
+f. None of the above
 
   **Answer:** Queries b and d.
 
