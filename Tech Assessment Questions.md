@@ -89,7 +89,7 @@ f. None of the above
 
 > SELECT 
 > 
->     EXTRACT(YEAR FROM c.signup_date) AS signup_year, -- or YEAR(c.signup_date) , or DATE_PART(c.signup_date), depending on the syntax!
+>     EXTRACT(YEAR FROM c.signup_date) AS signup_year, -- or YEAR(c.signup_date) , or DATE_PART('year', c.signup_date), depending on the syntax!
 > 
 >     COUNT(DISTINCT c.customer_id) AS total_customers,
 > 
