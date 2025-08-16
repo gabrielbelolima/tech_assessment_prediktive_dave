@@ -1,5 +1,5 @@
 SELECT 
-    EXTRACT(YEAR FROM c.signup_date) AS signup_year, -- or YEAR(c.signup_date) , or DATE_PART(c.signup_date)
+    EXTRACT(YEAR FROM c.signup_date) AS signup_year, -- or YEAR(c.signup_date) , or DATE_PART('year', c.signup_date)
     COUNT(DISTINCT c.customer_id) AS total_customers,
     COUNT(o.order_id) AS total_orders,
     SUM(o.total_amount) AS total_amount_spent
