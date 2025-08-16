@@ -1,6 +1,6 @@
 
 
-# **Tech Assessment - Gabriel Belo Lyra e Lima - Dave
+# Tech Assessment - Gabriel Belo Lyra e Lima - Dave
 
 
 
